@@ -1,3 +1,5 @@
+ifndef SIZE
+#define
 int num;
 struct student 
 {

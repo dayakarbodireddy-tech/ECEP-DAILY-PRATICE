@@ -307,3 +307,216 @@
 //         }
 //     }
 // }
+
+
+ //Rotate an array from a given position.
+//  #include<stdio.h>
+//  int main()
+//  {
+//     int size;
+//     printf("Enter the size : ");
+//     scanf("%d",&size);
+//     int arr[size];
+//     printf("Enter the array elements : ");
+//     for(int i=0;i<size;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     int position;
+//     printf("Enter the position : ");
+//     scanf("%d",&position);
+//     int temp=arr[size-1];
+//     for(int i=size-1;i>position-1;i--)
+//     {
+//         arr[i]=arr[i-1];
+//     }
+//     arr[position-1]=temp;
+//     for(int i=0;i<size;i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//  }
+
+// Insert a new value into a sorted array/list.
+// #include<stdio.h>
+// int main()
+// {
+//     int size;
+//     printf("Enter the size : ");
+//     scanf("%d",&size);
+//     int arr[size+1];
+//     printf("Enter the array elements : ");
+//     for(int i=0;i<size;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     int new_value;
+//     printf("Enter the new value : ");
+//     scanf("%d",&new_value);
+//     arr[size]=new_value;
+//     for(int i=0;i<size;i++)
+//     {
+//         for(int j=0;j<size-1;j++)
+//         {
+//             if(arr[j]>arr[j+1])
+//             {
+//                 int temp=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//             }
+//         }
+//     }
+//     for(int i=0;i<size+1;i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+// }
+
+
+// Merge two arrays into a third array using pointers.
+// #include<stdio.h>
+// int main()
+// {
+//     int size1;
+//     printf("Enter the size : ");
+//     scanf("%d",&size1);
+//     int arr1[size1];
+//     printf("Enter the array elements : ");
+//     for(int i=0;i<size1;i++)
+//     {
+//         scanf("%d",&arr1[i]);
+//     }
+//     int size2;
+//     printf("Enter the size2 : ");
+//     scanf("%d",&size2);
+//     int arr2[size2];
+//     printf("Enter the array2 elements : ");
+//     for(int i=0;i<size2;i++)
+//     {
+//         scanf("%d",&arr2[i]);
+//     }
+//     int merge[size1+size2];
+//     for(int i=0;i<size1;i++)
+//     {
+//         merge[i]=arr1[i];
+//     }
+//     for(int i=0;i<size2;i++)
+//     {
+//         merge[size1+i]=arr2[i];
+
+//     }
+//     // for(int i=0;i<size1+size2;i++)
+//     // {
+//     //     printf("%d ",merge[i]);
+//     // }
+//     //remove duplicates
+//     int uniq[size1+size2];
+//     int uniq_size=0;
+//     for(int i=0;i<size1+size2;i++)
+//     {
+//         int flag=0;
+//         for(int j=0;j<uniq_size;j++)
+//         {
+//             if(merge[i]==uniq[j])
+//             {
+//                 flag=1;
+//                 break;
+//             }
+//         }
+//         if(flag==0)
+//         {
+//             uniq[uniq_size]=merge[i];
+//             uniq_size++;
+//         }
+//     }
+//     //sorting
+//     for(int i=0;i<uniq_size;i++)
+//     {
+//         for(int j=0;j<uniq_size-1;j++)
+//         {
+//             if(uniq[j]>uniq[j+1])
+//             {
+//                 int temp=uniq[j];
+//                 uniq[j]=uniq[j+1];
+//                 uniq[j+1]=temp;
+//             }
+//         }
+//     }
+//     for(int i=0;i<uniq_size;i++)
+//     {
+//         printf("%d ",uniq[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
+///Sort an array in descending order without using bubble sort.
+// #include<stdio.h>
+// int main()
+// {
+//     int size;
+//     printf("Enter the size : ");
+//     scanf("%d",&size);
+//     int arr[size];
+//     printf("Enter the array elements: ");
+//     for(int i=0;i<size;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     int j=0;
+//     for(int i=0;i<size;i++)
+//     {
+//         if(arr[i]!=0)
+//         {
+//             arr[j]=arr[i];
+//             j++;
+//         }
+//     }
+//     while(j<size)
+//     {
+//         arr[j]=0;
+//         j++;
+//     }
+//     for(int i=0;i<size;i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int size;
+//     printf("Enter the size : ");
+//     scanf("%d",&size);
+//     int arr[size];
+//     printf("Enter the array elements: ");
+//     for(int i=0;i<size;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     int j=size-1;
+//     for(int i=size-1;i>=0;i--)
+//     {
+//         if(arr[i]!=0)
+//         {
+//             arr[j]=arr[i];
+//             j--;
+//         }
+//     }
+//     while(j>=0)
+//     {
+//         arr[j]=0;
+//         j--;
+//     }
+//     for(int i=0;i<size;i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }

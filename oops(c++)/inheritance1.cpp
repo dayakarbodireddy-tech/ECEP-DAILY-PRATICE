@@ -8,7 +8,7 @@ class Emertxe
     string name ;
     int dob;
     public:
-    Emertxe(int id=0,string name="Default",int dob=2003,int no_of_batches=0):id(id),name(name),dob(dob)
+    Emertxe(int id=0,string name="Default",int dob=2003):id(id),name(name),dob(dob)
     {
         cout<<"Emertxe Constructor called" << endl;
     }

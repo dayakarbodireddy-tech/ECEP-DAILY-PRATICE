@@ -21,20 +21,20 @@ int main()
     int column_sum=0;
     for(int i=0;i<rows;i++)
     {
-        row_sum=0;
+        
         for(int j=0;j<columns;j++)
         {
             row_sum=row_sum+arr[i][j];
         }
-        printf("Row sum is %d\n",row_sum);
     }
+    printf("Row sum is %d\n",row_sum);
     for(int i=0;i<columns;i++)
     {
-        column_sum=0;
+        
         for(int j=0;j<rows;j++)
         {
             column_sum=column_sum+arr[j][i];
         }
-        printf("Column sum is %d\n",column_sum);
     }
+    printf("Column sum is %d\n",column_sum);
 }
